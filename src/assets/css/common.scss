@@ -1,0 +1,41 @@
+body.pages-index-index uni-page-body {
+  font-size: 12px !important;
+}
+body.src-pages-index-index uni-page-body {
+  font-size: 12px !important;
+}
+
+.candraggable {
+  *:not(*[draggable]) {
+    // display: none;
+  }
+}
+
+.ghost {
+  border: 1px dashed blue;
+  padding: 20px 10px;
+}
+.sortable-chosen {
+  border: 1px dashed blue;
+}
+.addCompoonentIng {
+  border: 1px dashed blue;
+  padding: 20px 10px;
+  pointer-events: none;
+  &:after {
+    pointer-events: auto;
+    content: '\2716';
+    float: right;
+    width: 15px;
+    height: 15px;
+    padding: 2px 4px;
+    color: #505739;
+    position: relative;
+    top: -100%;
+    cursor: pointer;
+  }
+  .adding {
+    padding: 10px;
+    border: 1px dashed red;
+  }
+}
